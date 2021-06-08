@@ -1,20 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <age-solver :user-age="64"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AgeSolver from './components/AgeSolver.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AgeSolver
   }
 }
 </script>
+
+
+
+
+
+
+
+
+
 
 <style>
 #app {
