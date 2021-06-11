@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div :class="messageClass">
        <span v-if="isPensioner"> Можете відпочивати</span>
+       <span v-else-if="userAge===21">В Одесу</span>
        <span v-else> Вам потрібно працювати</span>
     </div>
 </template>
@@ -21,12 +22,20 @@
         computed : {
             isPensioner(){
             return this.userAge>this.pensionerAge
+            },
+            messageClass(){
+            return this.isPensioner?'red':'green'
             }
         }
 
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="css" scoped>
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
 </style>
