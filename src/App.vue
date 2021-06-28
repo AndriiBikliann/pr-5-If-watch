@@ -9,7 +9,7 @@
     :uaTranslate = "randomObject.uaTranslate"
     />
    <avia-tickets/> -->
-
+   <ticket-form/>
 
 
   </div>
@@ -18,7 +18,7 @@
 //import AviaTickets from './components/AviaTickets.vue';
 //import ExampleLogin from './components/ExampleLogin.vue'
 //import WordCard from './components/WordCard.vue'
-
+import TicketForm from './components/TicketForm.vue'
 
 
 
@@ -29,6 +29,7 @@ export default {
     //AviaTickets
     //ExampleLogin,
     //WordCard
+    TicketForm
   },
   data() {
     return {
